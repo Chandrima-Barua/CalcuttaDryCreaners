@@ -6,7 +6,7 @@ Rename .env.example file to .env your project root and fill the database informa
 {
 
 DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
+DB_HOST=localhost
 DB_PORT=3306
 DB_DATABASE=calcutta-dry-cleaners
 DB_USERNAME=root
