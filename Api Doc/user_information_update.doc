@@ -1,0 +1,33 @@
+This api will update  an user information
+
+Method: Get
+Url:http://cdc.octoriz.com/api/users
+Parameters:
+    "service_id": 16
+    and the other parameters will be the fields you want to be updated
+
+
+    ‘headers’ => [
+‘Accept’ => ‘application/json’,
+‘Authorization’ => ‘Bearer ‘.$api_key,
+]
+
+ "user": [
+        {
+            "userId": 16,
+            "userName": "Konka Barua",
+            "address": "sdasddasd",
+            "deviceId": "eyJpdiI6ImpwOW5PbFcyMkZTMFRDTWJqMTR5RWc9PSIsInZhbHVlIjoiZGhqb1E0am5VNHlFQnRvb1Y5VG1KZz09IiwibWFjIjoiZDFhZWRlNmMxODZmMWM0YzM0NzY2MTE4ZmQwMjg0ZWJjMjdiNTA0NjBmYzIyMjk4Zjk5NDYyNTE1NTE2YjljZiJ9",
+            "phoneNumber": "12131378178"
+        }
+    ],
+    "message": "Success"
+
+
+ If you try to update your phone phoneNumber
+
+{
+
+"message": "Please Login with new Phone number"  
+}
+   

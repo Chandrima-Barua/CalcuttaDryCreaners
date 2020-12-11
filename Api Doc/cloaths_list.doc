@@ -1,0 +1,45 @@
+Method: GET
+Url: http://cdc.octoriz.com/api/clothes
+
+‘headers’ => [
+‘Accept’ => ‘application/json’,
+‘Authorization’ => ‘Bearer ‘.$api_key,
+]
+
+{
+     "data": [
+        {
+            "itemId": 1,
+            "itemName": "Shari",
+            "regularPrice": 100,
+            "urgentPrice": 200,
+            "modelName": "Women",
+            "serviceType": "Wash & Fold"
+        },
+        {
+            "itemId": 2,
+            "itemName": "Shari",
+            "regularPrice": 125,
+            "urgentPrice": 500,
+            "modelName": "Women",
+            "serviceType": "Wash & Iron"
+        },
+        {
+            "itemId": 3,
+            "itemName": "Pant",
+            "regularPrice": 150,
+            "urgentPrice": 300,
+            "modelName": "Men",
+            "serviceType": "Dry Cleaning"
+        },
+        {
+            "itemId": 4,
+            "itemName": "Pant",
+            "regularPrice": 50,
+            "urgentPrice": 100,
+            "modelName": "Men",
+            "serviceType": "Stich"
+        }
+    ]
+}
+

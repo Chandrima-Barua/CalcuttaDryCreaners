@@ -1,0 +1,20 @@
+pipelines:
+  default:
+    - step:
+        name: Deploy to cdc.octoriz.com
+        deployment: staging
+        # trigger: manual  # Uncomment to make this a manual deployment.
+        script:
+          - pipe: atlassian/sftp-deploy:0.5.6
+            variables:
+              USER: 'chandrima'
+              SERVER: 'cdc.octoriz.com'
+              REMOTE_PATH: '/home/chandrima/cdc.octoriz.com/'
+              LOCAL_PATH: 'Api Doc/*'
+              SSH_KEY: $MY_SSH_KEY
+              PASSWORD: $PASSWORD
+              DEBUG: 'true'
+          - cat my_known_hosts >> ~/.ssh/known_hosts
+          - (umask  077 ; echo $MY_SSH_KEY | base64 --decode > ~/.ssh/id_rsa)
+          #- ssh chandrima@cdc.octoriz.com 'cd /home/chandrima/cdc.octoriz.com && git stash && git pull origin master && composer install && php artisan migrate && pm2 restart all'
+          - ssh chandrima@cdc.octoriz.com 'rm -rf ~/cdc.octoriz.com && eval $(ssh-agent -s) && ssh-add ~/.ssh/cdc_server && git clone git@bitbucket.org:octoriz/calcutta-dry-cleaners.git && mv ~/calcutta-dry-cleaners ~/cdc.octoriz.com && cp ~/.env ~/cdc.octoriz.com/.env && cd ~/cdc.octoriz.com && composer install && php artisan migrate && pm2 restart all'

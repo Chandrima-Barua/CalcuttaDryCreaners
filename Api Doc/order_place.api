@@ -1,0 +1,79 @@
+Method: Post
+Url: http://cdc.octoriz.com/api/orders/new
+‘headers’ => [
+‘Accept’ => ‘application/json’,
+‘Authorization’ => ‘Bearer ‘.$api_key,
+]
+raw data as json 
+
+{
+  "customername": "Chandrima Tushita",
+  "user_id": 1,
+  "phone_number": "01929344234",
+  "pickup_address": "gec moor, ctg",
+  "pickup_time": "11am - 1 pm",
+  "delivery_address": "was moor, ctg",
+  "total": 900,
+  "qty": 6,
+  "tax":"0%",
+  "discountvalue": "10%",
+  "subtotal": 1000,
+  "clothList":[
+    {
+      "itemId": 1,
+      "itemName": "Shirt Full",
+      "itemQuantity": [
+        {
+          "deliveryType": "urgent",
+          "price": 50.66,
+          "serviceType": [
+            "1","2"
+            
+          ]
+        },
+        {
+          "deliveryType": "regular",
+          "price": 50.66,
+          "serviceType": [
+            "1","3"
+          ]
+        },
+        {
+          "deliveryType": "regular",
+          "price": 50.66,
+          "serviceType": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "itemId": 2,
+      "itemName": "Pant",
+      "itemQuantity": [
+        {
+          "deliveryType": "urgent",
+          "price": 50.66,
+          "serviceType": [
+            "1","2","3"
+        
+          ]
+        },
+        {
+          "deliveryType": "regular",
+          "price": 50.66,
+          "serviceType": [
+            "1,4"
+          ]
+        },
+        {
+          "deliveryType": "regular",
+          "price": 50.66,
+          "serviceType": [
+            "1"
+          ]
+        }
+      ]
+    }
+  ]
+}

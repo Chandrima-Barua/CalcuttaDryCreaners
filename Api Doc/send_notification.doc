@@ -1,0 +1,8 @@
+Method: GET
+Url: http://cdc.octoriz.com/api/orders/send_notification
+
+Parameters: "device_id"
+‘headers’ => [
+‘Accept’ => ‘application/json’,
+‘Authorization’ => ‘Bearer ‘.$api_key,
+]

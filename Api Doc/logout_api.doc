@@ -1,0 +1,14 @@
+Method: Post
+Url:http://cdc.octoriz.com/api/logout
+
+‘headers’ => [
+‘Accept’ => ‘application/json’,
+‘Authorization’ => ‘Bearer ‘.$api_key,
+]
+
+Response:
+{
+    {
+    "message": "Successfully logged out"
+}
+}

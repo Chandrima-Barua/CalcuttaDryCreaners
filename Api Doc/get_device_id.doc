@@ -1,0 +1,13 @@
+Method: GET
+Url:http://cdc.octoriz.com/api/users/getDeviceId
+
+Parameters: "userid": 1
+
+‘headers’ => [
+‘Accept’ => ‘application/json’,
+‘Authorization’ => ‘Bearer ‘.$api_key,
+]
+
+{
+    "deviceId": "eyJpdiI6Ik04ejR1VmdDdU9qSzBtUnFOVkE2aGc9PSIsInZhbHVlIjoiVWFuSDZ6RUFzMXdCeHpqeVZEaUVKVm1LYWJoWVhCMnQrWlQ3TEVuRiszST0iLCJtYWMiOiI1NDMyN2U3ZTAyZjczYjFhNTZjMjc5YmM2ZGVkODM5NmM1ZmM3OTJhMzhiYTlmYzI4ZDg0NmRjMDYwOWJiZjRlIn0="
+}

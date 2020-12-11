@@ -1,0 +1,35 @@
+This api will authenticate  an user
+
+Method: GET
+Url:http://cdc.octoriz.com/api/login
+
+
+
+Parameters: "phonenumber": 4545454,
+
+
+
+if the api authenticate an user successfully then you will get this success message:
+
+Response:
+
+{
+    "user": {
+        "userId": 5,
+        "userName": "Chandrima Barua",
+        "address": "Kajir deuri",
+        "deviceId": null,
+        "phoneNumber": "4545454",
+        "api_key": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjgxZWE2NDdlOGU4MjkzYWIxOTQzMWM3NDBkMGVlZjlhZjNhMjIzNmFlMzI5NWNjMmIwM2MzYjNhNDY4Y2I4ZDliNTEzZTk5ODFmY2VmZDgiLCJpYXQiOjE1OTY2MjU5ODcsIm5iZiI6MTU5NjYyNTk4NywiZXhwIjoxNjI4MTYxOTg3LCJzdWIiOiI1Iiwic2NvcGVzIjpbXX0.cMPbn7l8Xwyw2nYBm6x3X9LY9ukPRRcvCPZP5cTusBvvN7rk5N2dRrEcbt6Nd230k2c4AsQVUylV0nOr9fQPNEY_hdn-uLXKWZrgPXyEBxX6_sLwx6UCSkZUETthX_8sN8Rj2IDqY9nE2z3TndrtPP-ct_tWRSILx8nQkeGiU3VWhrLfcjMjoJxTsvSizlnEwgJfFVrwPWrX24teoyb1lht6jFJHSTRJ34Ly3jl1mV4Wr7pjboQ8CnpbFx6n_QQEzMwMjKTrd1Y5qJOu8AduTq828bKT0zaRnJb5IAngK24X7K7rF5TXH1hcJxW41Oad7EnY5xaL_5hc33cUQO8HziM5NeTZ6wB3q1D0t11F-hxMExsoD5fi05hov9VtvptLdUfqQrnQzr-BlCVmpvM4jUz0FT7sBxNSZG2aVIFiYR2h75-2V7ZcnUySfYY3k5f8eKIl88dbO7ko845QEgxOa7hFoImF07h14mTiWcO_8Z2rti-25TPyPcAcTYs9es0IMYt9pPIVpNHQq_1Nr3zlzahN7DAcReHjy9Q6evXqzB-ePBITacOGMqk18ePHO6mO961iutnh2jlDfmMMagTxn44bfgz44lMLUyOha739wpuxk38jYYCHU5clvWbWV5B9UF9NRHuVvD8FHveNeDhyAZhf3ygJE2DmeWicUXLlQ5o"
+    },
+    "userExists": "true"
+}
+
+if the api failed to authenticate an user then you will get this failed message
+
+Response:
+
+{
+     "userExists": "false"
+}
+}

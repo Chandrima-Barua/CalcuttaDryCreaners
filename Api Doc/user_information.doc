@@ -1,0 +1,29 @@
+This api will retrive  an user information
+
+Method: Get
+Url:http://cdc.octoriz.com/api/users
+
+Parameters:
+    "userId": 16
+   
+‘headers’ => [
+‘Accept’ => ‘application/json’,
+‘Authorization’ => ‘Bearer ‘.$api_key,
+]
+
+if the api retrive an user information successfully then you will get this success message:
+
+Response:
+
+{
+     "user": [
+        {
+            "userId": 16,
+            "userName": "Konka Chowdhury",
+            "address": "sdasddasd",
+            "deviceId": "eyJpdiI6Iko1THI3TzJQSnZEa29lVnh1NnlNeUE9PSIsInZhbHVlIjoiN2JaSStsQnU5WlEzR0RrL1MzdUwxQT09IiwibWFjIjoiNzNhMDUzZmU3YjA3NDFlY2FhOTU3YTRmNWY1ZTU0OWRmYWM1NTg0MjQxM2ZkMjMxYzc1NTgyNDhiYjFmMWI1MiJ9",
+            "phoneNumber": "1213137817"
+        }
+    ],
+    "message": "Success"
+}

@@ -1,0 +1,33 @@
+This api will register an user
+
+Method: Post
+Url:http://cdc.octoriz.com/api/register
+
+Parameters:
+    userName: Chandrima Barua
+    phonenumber: 45454354
+    address: Kajir deuri
+    deviceId: ******
+
+
+if the api register an user successfully then you will get this success message:
+
+Response:
+
+{
+    "user": {
+        "userName": "Chandrima Barua",
+        "phonenumber": "45454354",
+        "deviceId": null,
+        "address": "Kajir deuri",
+        "updated_at": "2020-08-05T11:11:59.000000Z",
+        "created_at": "2020-08-05T11:11:59.000000Z",
+        "id": 6,
+        "api_key": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiY2M3OTNhYThkYWZkNTU5YjAxOTE4NTE1NzQyYzE2ZTA0ZTQwZjlkZTE0M2RlYjA2MDQ0OWYyMDNhZjQ2MGY3MGM2MWE3ZmViMzczMTE5NjEiLCJpYXQiOjE1OTY2MjU5MjEsIm5iZiI6MTU5NjYyNTkyMSwiZXhwIjoxNjI4MTYxOTIxLCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.nmV2X9TPqRv6_ZyAtj7Tgb9X3uOkdsCdd4mG6NrH-HW0ok-mQx-W5Xm6mxWlhCV6ETrqxs8lc0MQn4HfG6DSyWMNLYadvjYaR3s2ZFll_Wls73vmZDMgWq7ylxp7liEXHR_7-uI-IfY1n84VT6UZ2nCn1Bh4LBB3kTNt3UPFaI5gYAY9uKizyy-5WWpt3ssCGkXgZ66spLSOTHqa2gOAfNSHgSKWEh6XnRb0ZCcTjHjYhN_aJTIeiQhM28vbiY_B-6s89xi9kFaKme_Me36svHbv-soMGQczYLtJ8FUHtWUBi-UI7B5S6CIMWwCQ89ChVjQItgVruH9nEu2pppch9dLe3zZx4GuiXxXkYGWhEzIEZFRhl_tK1jNZC7zNxFD4eDQ-lDcgA2Ig4f3J-pe9QvRLfuLD4bBaE2rPNLbqftGUZgHVwVrZt-I6_PhzjGdreRTq03avwdIPlODWd0K4hxvgXQKWCZf_jM4etRmek_-Gcuk1KsEC0H7fogHYjTc_b0ULxI3-GKGZe1rwC8F3hlxgoguwLTh7eVIfH7Aje3rSLhFdkZlfgLEQWc8yHOGr29H9FHSgrykTqxLieq_7yCmR0ImkIMJWopzucghuDyYcedbR8c0cLxEY1CLMT2KI8Se8GwFKlGGAu67BUWI7il7OY4saWPi-DIIA1huT53Y"
+    }
+}
+
+
+You will get error message if you try to register with the phone number that you used before to register in CDC
+
+
