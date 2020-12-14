@@ -10,10 +10,12 @@ class Branch extends Model
     {
         return $this->belongsToMany(User::class, 'branch_user');
     }
+
     public function orders()
     {
         return $this->hasMany(Order::class);
     }
+
     public function expenses()
     {
         return $this->hasMany(Expense::class);
